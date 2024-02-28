@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Itim', cursive;
+}
+
+.background {
+  background-color: #12181B;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.display {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.tile {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tile:hover {
+  background-color: #3A3A3A;
+}
+
+.playerX {
+  color: #09C372;
+}
+
+.playerO {
+  color: #498AFB;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button.restart {
+  background-color: #498AFB;
+  color: white;
+}
+
+.controls button.restart:hover {
+  background-color: #2E6AD0;
+}
+
+.announcer {
+  color: white;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
